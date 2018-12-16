@@ -1,0 +1,15 @@
+.menu{
+    position: fixed;
+    display: block;
+    height: 80%;
+    width: 100%;
+}
+.menuCard{
+    position: relative;
+    height: 90%;
+    width: 500px;
+}
+
+button{
+    background: red;
+}

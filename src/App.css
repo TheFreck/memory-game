@@ -1,0 +1,19 @@
+
+.cardTable{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 800px;
+}
+
+
+
+/* 
+font-family: 'Monoton', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Black Ops One', cursive;
+*/

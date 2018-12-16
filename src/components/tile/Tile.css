@@ -1,0 +1,21 @@
+#tileCard{
+    width: 200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tiles{
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.blue{
+    background: rgb(50, 50, 109);
+}
+.eyeBall{
+    width: 150px;
+    height: 150px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
