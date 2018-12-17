@@ -11,5 +11,6 @@
 }
 
 button{
-    background: red;
+    opacity: 1;
+    background: rgba(210, 180, 140, 0.336);
 }

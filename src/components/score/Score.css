@@ -1,0 +1,8 @@
+.scoreCard{
+    width: 500px;
+    height: 200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Monoton', cursive;
+}
