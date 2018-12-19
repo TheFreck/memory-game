@@ -3,11 +3,20 @@
     display: block;
     height: 80%;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 48px;
+    text-align: center;
+    line-height: 3;
 }
 .menuCard{
     position: relative;
     height: 90%;
-    width: 500px;
+    width: 800px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(197, 221, 141, 0.507);
 }
 
 button{

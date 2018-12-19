@@ -4,9 +4,6 @@ import Menu from "./components/menu/Menu";
 import Score from "./components/score/Score";
 import './App.css';
 
-
-// before each render check to see if any state variables are false
-
 const cards = [
   "images/0uqxfkljdewz.jpg",
   "images/eye_cn3_palsey3.jpg",
@@ -21,6 +18,7 @@ const cards = [
   "images/1-animal-eyes.jpg",
   "images/closeup-eye-photos.jpg",
 ];
+
 const randomizeCards = (cards)=> {
   for (let i = cards.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -35,7 +33,6 @@ class App extends Component {
     gameOver: false
   };
   
-  
   // answerKey = ()=> {
 
   // }
@@ -46,8 +43,6 @@ class App extends Component {
       this.setState(() => ({
         gameOver: true
       }))
-      // build a modal to take the place of the alert
-      // when it comes up it will reset the score and allow the user to play again
     }else{
       this.setState(state => ({
         [name]: !state[name],
@@ -62,8 +57,6 @@ class App extends Component {
       gameOver: "restart"
     }))
   }
-
-
 
   render() {
     switch(this.state.gameOver) {
@@ -99,33 +92,6 @@ class App extends Component {
       default:
         return <Menu state={this.state} callback={this.restart} />
     }
-
-    
-    // if(this.state.gameOver){
-    //   console.log("game overs");
-    //   return (
-    //     <Menu 
-    //       state={this.state} 
-    //       callback={this.restart} 
-    //     />  
-    //   )
-    // }else{
-    //   randomizeCards(cards);
-    //   return (
-    //     <div className="cardTable">
-    //       {cards.map((card) =>
-    //         <Tile 
-    //           state={this.state} 
-    //           callback={this.toggleState} 
-    //           className="tile" 
-    //           key={card} 
-    //           name={card} 
-    //         />
-    //       )}
-    //     </div>
-    //   );
-    // }
-
   }
 }
 

@@ -11,6 +11,7 @@ const Menu = props => {
         <div className="menu">
             <Card className="menuCard">
                 <section>
+                    <br/>
                     <p>Your score was: {props.state.score}</p>
                     <button onClick={playAgain}>Play Again</button>
                 </section>
